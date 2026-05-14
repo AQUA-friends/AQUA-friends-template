@@ -1,0 +1,1 @@
+# AQUA-friends-template
