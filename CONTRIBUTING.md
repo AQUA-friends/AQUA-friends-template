@@ -12,7 +12,6 @@ repository.
    [AQUA-friends](https://github.com/AQUA-friends) organisation.
 2. Rename:
    - the Python package directory (`aqua_friends_template/` → your name)
-   - the CLI script (`cli/cli_template.py` → your name)
    - the example config in `config/`
    - the `name` field in `pyproject.toml`
 3. Update this `CONTRIBUTING.md` and the `README.md` to describe **your**
@@ -21,12 +20,7 @@ repository.
 
 ## Keeping your AQUA-friend compatible
 
-Whatever you do inside your AQUA-friend, make sure that:
-
-- The CLI keeps accepting every flag listed in the
-  [CLI contract](README.md#cli-contract) — even those your tool ignores —
-  otherwise `aqua analysis` will fail to launch it.
-- `import aqua` keeps being a hard dependency.
+Whatever you do inside your AQUA-friend, make sure that `import aqua` keeps being a hard dependency.
 
 ## Suggesting changes to AQUA core
 
