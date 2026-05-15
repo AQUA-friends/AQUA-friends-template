@@ -13,7 +13,6 @@ authors = [
 ]
 
 # Runtime dependencies.
-#
 # `aqua-core` is the AQUA core library on PyPI (https://pypi.org/project/aqua-core/);
 # its import name is `aqua`. It is a hard requirement of every AQUA-friend.
 
