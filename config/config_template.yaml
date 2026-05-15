@@ -1,0 +1,17 @@
+# Example diagnostic config for the AQUA-friend template.
+#
+# This file is passed to the CLI via the `--config` flag (which `aqua analysis`
+# fills in automatically from its own YAML configuration).
+#
+# Replace these placeholders with whatever your AQUA-friend actually needs:
+# variables, regions, thresholds, reference datasets, plot options, etc.
+
+diagnostic:
+  name: "aqua_friends_template"
+  # TODO: list the variables your analysis needs.
+  variables: []
+
+plot:
+  # TODO: plot options.
+  dpi: 150
+  format: "png"
