@@ -10,17 +10,17 @@ repository.
 
 1. Use *Use this template* on GitHub to create a new repository under the
    [AQUA-friends](https://github.com/AQUA-friends) organisation.
-2. Rename:
-   - the Python package directory (`aqua_friends_template/` → your name)
-   - the example config in `config/`
-   - the `name` field in `pyproject.toml`
+2. Rename the `name` field in `pyproject.toml`
 3. Update this `CONTRIBUTING.md` and the `README.md` to describe **your**
    AQUA-friend.
 4. Add a `LICENSE` file.
 
 ## Keeping your AQUA-friend compatible
 
-Whatever you do inside your AQUA-friend, make sure that `import aqua` keeps being a hard dependency.
+Whatever you do inside your AQUA-friend, make sure that `import aqua` keeps 
+being a hard dependency.
+A pin of the AQUA version is possible, so that any update in the AQUA `main` 
+branch does not break the compatibility of the tool.
 
 ## Suggesting changes to AQUA core
 
