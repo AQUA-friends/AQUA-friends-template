@@ -6,8 +6,8 @@ Template repository for an **AQUA-friend**.
 
 An AQUA-friend is a data analysis package that lives outside the official AQUA codebase
 but is built to work *with* AQUA. It uses AQUA core (the `Reader` and
-related utilities) as a library, exposes a command-line interface that
-AQUA analysis can launch, and otherwise stays independent.
+related utilities) as a library and can expose a command-line interface that
+AQUA analysis can launch.
 
 AQUA-friends are collected under the [AQUA-friends](https://github.com/AQUA-friends)
 organisation. Each AQUA-friend is its own repository, with its own
@@ -29,10 +29,7 @@ aqua-friends-template/
 ## How to use this template
 
 1. Click *Use this template* on GitHub (or fork it).
-2. Rename the repository, the `aqua_friends_template/` package and the
-   example config to match your tool's name. (`cli/cli_template.py` can
-   stay as is, or be renamed if you prefer.)
-3. Fill in the `TODO`s in `aqua_friends_template/diagnostic.py`.
-4. Replace this README with documentation of your own diagnostic, and
+2. Rename the repository.
+3. Replace this README with documentation of your own diagnostic, and
    adjust `pyproject.toml` (authors, dependencies, etc.).
-5. Pick a license that suits your work and add a `LICENSE` file.
+4. Pick a license that suits your work and add a `LICENSE` file.
