@@ -13,7 +13,7 @@ repository.
 2. Rename the `name` field in `pyproject.toml`
 3. Update this `CONTRIBUTING.md` and the `README.md` to describe **your**
    AQUA-friend.
-4. Add a `LICENSE` file.
+4. Modify the `LICENSE` file. By default we suggest the MIT license, but you can choose any other license that suits your needs. Make sure to update the copyright notice and the year.
 
 ## Keeping your AQUA-friend compatible
 
