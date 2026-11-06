@@ -7,7 +7,7 @@ name = "aqua-friends-template"
 version = "0.0.1"
 description = "Template repository for an AQUA-friend"
 readme = "README.md"
-requires-python = "<=3.15"
+requires-python = ">=3.12,<3.15"
 authors = [
     {name = "Your Name", email = "you@example.com"},
 ]
@@ -15,6 +15,7 @@ authors = [
 # Runtime dependencies.
 # `aqua-core` is the AQUA core library on PyPI (https://pypi.org/project/aqua-core/);
 # its import name is `aqua`. It is a hard requirement of every AQUA-friend.
+# Levels 2 and 3 (see README) use AQUA-diagnostics: replace "aqua-core" with "aqua-diagnostics[core]".
 
 dependencies = [
     "aqua-core",

@@ -15,6 +15,12 @@ repository.
    AQUA-friend.
 4. Modify the `LICENSE` file. By default we suggest the MIT license, but you can choose any other license that suits your needs. Make sure to update the copyright notice and the year.
 
+5. Choose, among the options in the `README.md`, your environment files and your
+   coherence level with AQUA. Delete the optional files you do not need, then state
+   your choices in your own `README.md`.
+6. Document every change in `CHANGELOG.md`, in the same format as AQUA and
+   AQUA-diagnostics, citing the pull request number.
+
 ## Keeping your AQUA-friend compatible
 
 Whatever you do inside your AQUA-friend, make sure that `import aqua` keeps 
