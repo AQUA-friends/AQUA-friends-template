@@ -1,0 +1,4 @@
+# OPTIONAL template: keep this file only if you need pip packages or pins on top of pyproject.toml.
+# Delete it otherwise. Keep only the line that matches your coherence level (see README).
+aqua-core>=1.2.3                  # levels 0, 1a, 1b
+# aqua-diagnostics[core]>=0.26.0  # levels 2, 3 (brings aqua-core)
