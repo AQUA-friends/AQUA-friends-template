@@ -22,6 +22,8 @@ aqua-friends-template/
 ├── README.md
 ├── CONTRIBUTING.md
 ├── CHANGELOG.md
+├── AGENTS.md          (instructions for AI agents, CLAUDE.md points to it)
+├── .claude/skills/    (skill to write code at coherence levels 2 and 3)
 ├── pyproject.toml
 ├── requirements.txt   (optional)
 ├── environment.yml    (optional)
