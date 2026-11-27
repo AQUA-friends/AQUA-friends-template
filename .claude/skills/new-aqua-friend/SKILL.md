@@ -9,6 +9,12 @@ An AQUA-friend follows AQUA only as far as its author chooses. The levels are **
 (see `README.md` and `AGENTS.md`). This skill adds no standards of its own: it points to the AQUA ones and
 says how to adapt them to this repository. Nothing is copied here, so there is nothing to keep in sync.
 
+## 0. Wrapping an existing tool?
+
+If the AQUA-friend runs a tool that already exists, follow "Wrapping an existing tool" in `AGENTS.md` first
+(`ASSESSMENT.md`, adaptor that stages data, tool as pinned external checkout). Settle the level below once the
+assessment says what code is needed.
+
 ## 1. Settle the level first
 
 Ask the user, in one message and with your proposed default, unless the request already answers:
