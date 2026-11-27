@@ -43,6 +43,8 @@ rest, and do not fill in files you do not use.
 4. **No environment file at all**, stating in your README that the AQUA-friend runs in the same
    environment as [AQUA-diagnostics](https://github.com/DestinE-Climate-DT/AQUA-diagnostics),
    if it needs nothing more.
+5. **A separate environment for a wrapped tool**, when the AQUA-friend runs an existing tool whose pinned
+   dependencies conflict with AQUA: the AQUA-friend only stages data and calls the tool's command line.
 
 ## Coherence with AQUA: choose your level
 

@@ -29,7 +29,9 @@ differs a lot from the AQUA-diagnostics examples.
 Hence:
 
 - Ask the user which coherence level (0, 1a, 1b, 2, 3) and which environment option
-  they want, unless they already said. Do not decide in silence.
+  they want, unless they already said. Do not decide in silence. Ask when the first code is
+  about to be written: an assessment (see below) needs no choice yet, and until then the optional
+  files stay untouched.
 - Never create or fill an optional file (`requirements.txt`, `environment.yml`) that the user
   did not choose, and delete the optional templates they do not need.
 - Apply the rules of the chosen level only. Do not add AQUA-diagnostics structures
@@ -40,6 +42,26 @@ Hence:
 
 Use the `new-aqua-friend` skill ([`.claude/skills/new-aqua-friend/SKILL.md`](.claude/skills/new-aqua-friend/SKILL.md));
 agents that do not load skills read that file directly. The code of an AQUA-friend lives in `src/<package>/`.
+
+## Wrapping an existing tool
+
+When the AQUA-friend is meant to run a tool that already exists (written for another framework or for CMIP files),
+do not rewrite it. Assess first, then code:
+
+1. Write an `ASSESSMENT.md` before any integration code: what the tool needs as input, which of those variables the AQUA
+   `Reader` can deliver (probe with one day of data before asking for a month), what can or cannot run, the
+   environment conflicts, and a task list with the gates that decide whether to continue and a short verdict on the effort.
+2. Prefer an adaptor: read with the `Reader`, regrid with AQUA if the tool needs a regular grid, and stage the data in the
+   format the tool expects. Do not fork or vendor the tool, and check its licence.
+3. Consume the tool as a pinned external checkout and drive it through its command line. If its pinned dependencies
+   conflict with AQUA (Python, numpy, xarray), prefer two environments over patching the tool.
+4. Anything missing from AQUA or from the data (variables, grids, runs) goes to the AQUA or catalog maintainers as an issue.
+
+## Reading Climate DT data away from HPC
+
+`Reader(..., engine="polytope")` reads from the data bridge with the credentials of `~/.polytopeapirc` (never read or print it).
+The grid files of `aqua-dvc` are `.dvc` pointers until pulled: use `areas=False` for retrieval only, and ask the user before a
+`dvc pull`, which is a download. Only some runs are on the bridge, so probe one day first.
 
 ## If this AQUA-friend is included in AQUA-diagnostics
 
